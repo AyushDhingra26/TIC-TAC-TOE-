@@ -1,0 +1,119 @@
+/* At the top of your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+
+/* CSS class definition */
+.chako {
+  color: #556B2F; /* Dark Olive Green for better readability and contrast */
+  text-align: center;
+  font-family: 'Playwrite MX', sans-serif;
+  text-decoration: solid;
+  padding-right: 8px;
+  font-size: 2rem; /* Adjust font size as needed */
+}
+.nahi{
+  color: #556B2F; /* Dark Olive Green for better readability and contrast */
+  text-align: center;
+  font-family: 'Playwrite MX', sans-serif;
+  text-decoration: solid;
+  padding-left: 8px;
+  font-size: 2rem; /* Adjust font size as needed */
+}
+
+.rand {
+  color: #556B2F; /* Dark Olive Green for better readability and contrast */
+  text-align: center;
+  font-family: 'Playwrite MX', sans-serif;
+  text-decoration: solid;
+  padding-right: 100px;
+  font-size: 2rem; /* Adjust font size as needed */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('wp8984736.jpg'); /* Background image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: bottom center; /* Center and align the background image to the bottom */
+  background-repeat: no-repeat; /* Prevent repeating of the image */
+  background-attachment: fixed; /* Ensure the background image stays fixed when scrolling */
+  text-align: center;
+  color: #FFFFFF; /* White text for contrast */
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: flex-start; /* Align items to the top */
+  height: 100vh; /* Full viewport height */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px; /* Margin to separate from the right edge */
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: 2px solid #F0F8FF; /* Alice Blue border for definition */
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  font-size: 8vmin;
+  color: #556B2F; /* Dark Olive Green text for coherence */
+  background-color: #FFD700; /* Gold for a pop of color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 1rem 2rem; /* Increased padding for a larger button */
+  font-size: 1.5rem; /* Larger font size for readability */
+  background-color: #556B2F; /* Dark Olive Green for coherence */
+  color: #FFD700; /* Gold text for contrast */
+  border-radius: 2rem; /* More rounded corners for a modern look */
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  margin-right: 10px; /* Adjust margin to move button to the left */
+}
+
+.button:hover {
+  background-color: #FFD700; /* Gold for hover effect */
+  color: #556B2F; /* Dark Olive Green text for contrast */
+  transform: scale(1.1); /* Slightly larger button on hover */
+}
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+#msg {
+  background-color: #8FBC8F; /* Dark Sea Green */
+  color: #FFD700; /* Dark Olive Green text */
+  font-size: 50px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 1rem;
+  display: none; /* Initially hidden */
+}
+
+/* Positioning for reset and new game buttons */
+#reset-button,
+#reset-btn {
+  composes: button;
+  margin-top: 10px; /* Margin between buttons */
+}
