@@ -3,6 +3,8 @@ let resetBtn = document.querySelector("#reset-btn");
 let winnerMessage = document.querySelector("#msg");
 
 let turn0 = true;
+let player1 = prompt("Enter Player 1 name:");
+let player2 = prompt("Enter Player 2 name:");
 
 const winPatterns = [
   [0, 1, 2],
@@ -39,7 +41,8 @@ const checkWinner = () => {
     if (pos1Val !== "" && pos2Val !== "" && pos3Val !== "") {
       if (pos1Val === pos2Val && pos2Val === pos3Val) {
         winnerMessage.style.display = "block";
-        winnerMessage.innerText = `CONGRATULATIONS! WINNER IS ${pos1Val}`;
+        let winnerName = pos1Val === "O" ? player1 : player2;
+        winnerMessage.innerText = `CONGRATULATIONS! WINNER IS ${winnerName}`;
         boxes.forEach((box) => (box.style.pointerEvents = "none")); // Disable all boxes when there's a winner
         return;
       }
@@ -55,4 +58,6 @@ resetBtn.addEventListener("click", () => {
   });
   winnerMessage.style.display = "none";
   turn0 = true;
+  player1 = prompt("Enter Player 1 name:");
+  player2 = prompt("Enter Player 2 name:");
 });
